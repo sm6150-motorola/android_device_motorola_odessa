@@ -28,3 +28,8 @@ BLOB_ROOT="$ANDROID_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
 
 CAMERA_HAL_CHI="$BLOB_ROOT"/vendor/lib64/hw/com.qti.chi.override.so
 sed -i "s/libhidltransport.so/qtimutex.so\x00\x00\x00\x00\x00\x00\x00\x00/" "$CAMERA_HAL_CHI"
+
+CHARGE_ONLY="$BLOB_ROOT"/vendor/bin/charge_only_mode
+for LIBMEMSET_SHIM in $(grep -L "libmemset_shim.so" "$CHARGE_ONLY"); do
+    patchelf --add-needed "libmemset_shim.so" "$LIBMEMSET_SHIM"
+done
