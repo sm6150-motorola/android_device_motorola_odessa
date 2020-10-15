@@ -41,3 +41,7 @@ LIBSENSORCAL="$BLOB_ROOT"/vendor/lib64/libsensorcal.so
 for LIBCOMPARETF2 in $(grep -L "libcomparetf2.so" "$VIDHANCE" "$CAMERA_HAL" "$LIBSSC" "$LIBSENSORCAL"); do
     patchelf --add-needed "libcomparetf2.so" "$LIBCOMPARETF2"
 done
+
+for LIBDEMANGLE in $(grep -L "libdemangle.so" "$VIDHANCE"); do
+    patchelf --add-needed "libdemangle.so" "$LIBDEMANGLE"
+done
