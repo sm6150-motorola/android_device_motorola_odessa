@@ -78,7 +78,8 @@ PRODUCT_PACKAGES += \
 
 # Shims
 PRODUCT_PACKAGES += \
-    libmemset_shim
+    libmemset_shim \
+    libcomparetf2
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \

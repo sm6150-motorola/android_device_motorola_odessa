@@ -33,3 +33,11 @@ CHARGE_ONLY="$BLOB_ROOT"/vendor/bin/charge_only_mode
 for LIBMEMSET_SHIM in $(grep -L "libmemset_shim.so" "$CHARGE_ONLY"); do
     patchelf --add-needed "libmemset_shim.so" "$LIBMEMSET_SHIM"
 done
+
+VIDHANCE="$BLOB_ROOT"/vendor/lib64/libvidhance.so
+CAMERA_HAL="$BLOB_ROOT"/vendor/lib64/hw/camera.qcom.so
+LIBSSC="$BLOB_ROOT"/vendor/lib64/libssc.so
+LIBSENSORCAL="$BLOB_ROOT"/vendor/lib64/libsensorcal.so
+for LIBCOMPARETF2 in $(grep -L "libcomparetf2.so" "$VIDHANCE" "$CAMERA_HAL" "$LIBSSC" "$LIBSENSORCAL"); do
+    patchelf --add-needed "libcomparetf2.so" "$LIBCOMPARETF2"
+done
