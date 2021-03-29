@@ -16,13 +16,13 @@
 
 -include device/motorola/sm6150-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/motorola/racer
+DEVICE_PATH := device/motorola/odessa
 
 # Display
 TARGET_SCREEN_DENSITY := 420
 
 # Kernel
-TARGET_KERNEL_CONFIG := vendor/racer_defconfig
+TARGET_KERNEL_CONFIG := vendor/odessa_defconfig
 
 # Kernel modules - Audio
 TARGET_MODULE_ALIASES += \

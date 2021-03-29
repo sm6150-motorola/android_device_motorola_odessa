@@ -14,7 +14,7 @@ fi
 
 set -e
 
-export DEVICE=racer
+export DEVICE=odessa
 export DEVICE_COMMON=sm6150-common
 export VENDOR=motorola
 

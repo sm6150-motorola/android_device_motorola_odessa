@@ -1,5 +1,5 @@
 #
-# Properties for racer
+# Properties for odessa
 #
 
 # Camera

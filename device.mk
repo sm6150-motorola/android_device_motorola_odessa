@@ -17,7 +17,7 @@
 $(call inherit-product, device/motorola/sm6150-common/common.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product, vendor/motorola/racer/racer-vendor.mk)
+$(call inherit-product, vendor/motorola/odessa/odessa-vendor.mk)
 
 # Properties
 -include $(LOCAL_PATH)/properties.mk

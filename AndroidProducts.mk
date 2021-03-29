@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_racer.mk
+    $(LOCAL_DIR)/lineage_odessa.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_racer-eng \
-    lineage_racer-user \
-    lineage_racer-userdebug
+    lineage_odessa-eng \
+    lineage_odessa-user \
+    lineage_odessa-userdebug
