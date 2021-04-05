@@ -29,13 +29,7 @@ TARGET_KERNEL_CONFIG := vendor/odessa_defconfig
 
 # Kernel modules - Audio
 TARGET_MODULE_ALIASES += \
-    snd-soc-aov-trigger.ko:aov_trigger.ko \
-    snd-soc-cs35l41-spi.ko:cirrus_cs35l41-spi.ko \
-    snd-soc-cs35l41.ko:cirrus_cs35l41.ko \
-    snd-soc-cs47l35.ko:cirrus_cs47l35.ko \
-    snd-soc-madera.ko:cirrus_madera.ko \
-    snd-soc-wm-adsp.ko:cirrus_wm_adsp.ko \
-    irq-madera.ko:cirrus_irq-madera.ko
+    snd-soc-aw882xx.ko:snd_smartpa_aw882xx.ko
 
 # SELinux
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
