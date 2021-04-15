@@ -108,7 +108,7 @@ vendor/lib64/motorola.hardware.audio.adspd@1.0-impl.so
 vendor/lib64/motorola.hardware.audio.adspd@1.0.so
 
 # NFC
-vendor/firmware/st21nfc_fw.bin
+vendor/lib64/libpn557_fw.so
 
 # OEM
 vendor/etc/vhw.xml
