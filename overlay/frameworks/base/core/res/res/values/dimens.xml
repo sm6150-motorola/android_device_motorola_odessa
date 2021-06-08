@@ -29,4 +29,10 @@
     <!-- Height of area above QQS where battery/time go (48dp to reduce scrolling) -->
     <dimen name="quick_qs_offset_height">48dp</dimen>
 
+    <!-- Top adjustment for the software rounded corners since corners are not perfectly
+        round. This value is used when retrieving the "radius" of the rounded corner in cases
+        where the exact bezier curve cannot be retrieved. This value will be subtracted from
+        rounded_corner_radius to more accurately provide a "radius" for the rounded corners.-->
+    <dimen name="rounded_corner_radius_adjustment">8px</dimen>
+
 </resources>
