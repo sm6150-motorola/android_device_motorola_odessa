@@ -26,4 +26,7 @@
     <!-- Radius of the software rounded corners. -->
     <dimen name="rounded_corner_radius">103px</dimen>
 
+    <!-- Height of area above QQS where battery/time go (48dp to reduce scrolling) -->
+    <dimen name="quick_qs_offset_height">48dp</dimen>
+
 </resources>
