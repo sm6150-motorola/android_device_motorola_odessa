@@ -6,6 +6,10 @@
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.physical.num=5
 
+# Cutout
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.support_hide_display_cutout=true
+
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.sf.color_mode=0
