@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from Odessa RPAS31.Q2-59-17-3
+# All unpinned blobs below are extracted from Odessa RPAS31.Q2-59-17-4-5-5
 
 # ACDB
 vendor/etc/acdbdata/adsp_avs_config.acdb
